@@ -90,7 +90,7 @@ flutter test test/view/product_page_test.dart
 ## 🎥 Démo vidéo
 
 Une démo rapide des fonctionnalités est disponible dans le fichier :  
-[📹 jooka-store-demo.mp4](jooka-store-demo.mp4)  
+[📹 jooka-store-demo.mp4](./jooka-store-demo.mp4)  
 
 ---
 
