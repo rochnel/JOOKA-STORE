@@ -16,7 +16,7 @@ Jooka Store est une application de commerce électronique développée avec Flut
 ### Étapes :
 1. Clonez le dépôt :
    ```bash
-   git clone https://github.com/votre-repository/jooka-store.git
+   git clone https://github.com/rochnel/JOOKA-STORE.git
    cd jooka-store
    ```
 2. Installez les dépendances Flutter :
@@ -34,6 +34,14 @@ Jooka Store est une application de commerce électronique développée avec Flut
 
 ---
 
+## 📱 Téléchargement de l'APK
+
+L'APK de l'application est disponible pour le téléchargement ici :
+
+[📥 Télécharger Jooka Store APK](jooka_store.apk)
+
+---
+
 ## 🏗️ Vue d’ensemble de l’architecture
 
 ### Architecture
@@ -47,7 +55,7 @@ Le projet suit l'architecture **MVC (Model-View-Controller)** avec **GetX** pour
    - Gère les interactions utilisateur et les mises à jour des données (par exemple, `CartController`, `ProductController`).
 
 ### Flux de données
-1. **Appel API** : Les données sont récupérées via un dépôt (`GetProductRepository`).
+1. **Appel API** : Les données sont récupérées via un dépôt (`GetProductRepository`) qui utilise le package `dio` pour effectuer les requêtes HTTP.
 2. **Persistance locale** : `GetStorage` est utilisé pour sauvegarder les données localement.
 3. **Gestion de l'état** : `GetX` observe les modifications et met à jour la vue automatiquement.
 
@@ -55,12 +63,13 @@ Le projet suit l'architecture **MVC (Model-View-Controller)** avec **GetX** pour
 
 ## 🛠️ Packages tiers utilisés
 
-Voici les packages principaux utilisés :
+Voici les principaux packages utilisés dans ce projet :
+
+- [`dio`](https://pub.dev/packages/dio) : Effectuer des requêtes HTTP.
 - [`get`](https://pub.dev/packages/get) : Gestion d'état et navigation.
 - [`get_storage`](https://pub.dev/packages/get_storage) : Persistance des données.
 - [`shimmer`](https://pub.dev/packages/shimmer) : Effet visuel pour les loaders.
 - [`badges`](https://pub.dev/packages/badges) : Badges pour le panier.
-- [`flutter_test`](https://pub.dev/packages/flutter_test) : Framework de test intégré.
 
 ---
 
@@ -81,7 +90,7 @@ flutter test test/view/product_page_test.dart
 ## 🎥 Démo vidéo
 
 Une démo rapide des fonctionnalités est disponible dans le fichier :  
-[📹 jooka-store-demo.mp4](./assets/demo/jooka-store-demo.mp4)  
+[📹 jooka-store-demo.mp4](jooka-store-demo.mp4)  
 
 ---
 
@@ -93,6 +102,3 @@ Une démo rapide des fonctionnalités est disponible dans le fichier :
 4. L'utilisateur ne modifie pas les données persistées directement en dehors de l'application.
 
 ---
-
-## 🙌 Contributions
-Pour toute contribution, créez une pull request ou ouvrez une issue.
