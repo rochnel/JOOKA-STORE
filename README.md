@@ -15,7 +15,7 @@
 ### Étapes :
 1. Clonez le dépôt :
    ```bash
-   git clone [https://github.com/votre-repository/jooka-store.git](https://github.com/rochnel/JOOKA-STORE.git)
+   git clone https://github.com/rochnel/JOOKA-STORE.git
    cd jooka-store
    ```
 2. Installez les dépendances Flutter :
